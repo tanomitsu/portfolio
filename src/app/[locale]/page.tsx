@@ -10,8 +10,6 @@ import Skills from "@/components/sections/skills";
 import Certifications from "@/components/sections/certifications";
 import Contact from "@/components/sections/contact";
 
-export const dynamic = "force-static";
-
 export default function HomePage() {
   return (
     <main className="min-h-screen">
