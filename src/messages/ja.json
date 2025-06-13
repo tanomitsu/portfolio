@@ -1,0 +1,100 @@
+{
+  "navigation": {
+    "about": "プロフィール",
+    "education": "学歴",
+    "experience": "職歴",
+    "projects": "プロジェクト",
+    "skills": "スキル",
+    "certifications": "資格",
+    "contact": "連絡先情報"
+  },
+  "hero": {
+    "greeting": "こんにちは、私はソフトウェアエンジニアの",
+    "name": "波多野充",
+    "subtitle": "です。革新的なソリューションの創造に情熱を注いでいます",
+    "cta": "連絡先情報"
+  },
+  "about": {
+    "title": "プロフィール",
+    "description": "私はソフトウェア開発に情熱を持つ情報理工学を専攻する大学院生です。社会課題を解決するようなプロダクトを作るのが好きで、常に新しい技術を学ぶことに情熱があります。"
+  },
+  "education": {
+    "title": "学歴",
+    "ba": {
+      "university": "東京大学",
+      "degree": "学士（工学）",
+      "period": "2020年4月 - 2025年3月"
+    },
+    "master": {
+      "university": "東京大学",
+      "degree": "修士（情報理工学）",
+      "period": "2025年4月 - 2027年3月（予定）"
+    }
+  },
+  "experience": {
+    "title": "職歴",
+    "intern1": {
+      "title": "ソフトウェアエンジニア インターン",
+      "company": "Digital Experts株式会社",
+      "period": "2024/11〜2024/12, 2025/04〜現在",
+      "description": "機械学習を用いたiOSアプリケーションの開発に従事しています。"
+    },
+    "intern2": {
+      "title": "ソフトウェアエンジニア サマーインターン",
+      "company": "PKSHA Technology株式会社",
+      "period": "2024/07",
+      "description": "PKSHA Speech Insightのバックエンドの開発に従事していました。"
+    },
+    "intern3": {
+      "title": "AI SaaS事業部 ソフトウェアエンジニアインターン",
+      "company": "燈株式会社",
+      "period": "2022/05 - 2024/11",
+      "description": "Digital BillderというSaasプロダクトのフロントエンドとバックエンドの開発を行いました。特にDigital Billder発注の開発に大きく貢献しました。"
+    }
+  },
+  "projects": {
+    "title": "プロジェクト",
+    "project1": {
+      "title": "ESpecial Write",
+      "description": "就活生向けのES管理・執筆補助と、AIによるES添削サービス",
+      "tech": "Next.js, TypeScript, OpenAI, shadcn/ui, Tailwind CSS",
+      "liveUrl": "https://www.especialwrite.com/",
+      "githubUrl": ""
+    },
+    "project2": {
+      "title": "Animora",
+      "description": "毎日届くお題に応じてペットの写真を撮影したり、ペットの写真を投稿して他のユーザーと共有するSNSアプリ（iOS）",
+      "tech": "React Native, Typescript, Go, PostgreSQL, Docker, AWS, AWS CDK, Supabase",
+      "liveUrl": "https://apps.apple.com/jp/app/animora/id6745143381",
+      "githubUrl": "https://github.com/AnimoraVictory/animora"
+    },
+    "project3": {
+      "title": "Sikepuri",
+      "description": "大学生向けの講義資料共有サービスです。MarkdownもしくはPDFで資料を作成し共有することができます。",
+      "tech": "Next.js, Typescript, React, Chakra UI, Hono, PostgreSQL, Docker, AWS, Terraform",
+      "liveUrl": "",
+      "githubUrl": ""
+    }
+  },
+  "skills": {
+    "title": "技術スキル",
+    "languages": "プログラミング言語",
+    "frameworks": "フレームワーク・ライブラリ",
+    "tools": "ツール・技術"
+  },
+  "certifications": {
+    "title": "資格",
+    "atcoder": "AtCoder Algorithm: 1087 (2022/04)",
+    "atcoderUrl": "https://atcoder.jp/users/tanomitsu",
+    "ap": "応用情報技術者試験",
+    "toefl": "TOEFL iBT: 96"
+  },
+  "contact": {
+    "title": "連絡先情報",
+    "description": "新しい機会や興味深いプロジェクトについて話し合うことは常に歓迎です。",
+    "email": "メール",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "atcoder": "AtCoder"
+  }
+}

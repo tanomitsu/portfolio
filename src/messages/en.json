@@ -1,0 +1,99 @@
+{
+  "navigation": {
+    "about": "About",
+    "education": "Education",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "certifications": "Certifications",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm a software engineer",
+    "name": "Mitsuru Hatano",
+    "subtitle": "Passionate about creating innovative solutions",
+    "cta": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a master's student in information engineering with a passion for software development. I enjoy creating products that solve social problems and am always eager to learn new technologies."
+  },
+  "education": {
+    "title": "Education",
+    "ba": {
+      "university": "The University of Tokyo",
+      "degree": "Bachelor of Electronic Engineering",
+      "period": "April 2020 - March 2025"
+    },
+    "master": {
+      "university": "The University of Tokyo",
+      "degree": "Master of Engineering in Information and Communication Engineering",
+      "period": "April 2025 - March 2027 (expected)"
+    }
+  },
+  "experience": {
+    "title": "Work Experience",
+    "intern1": {
+      "title": "Software Engineer Intern",
+      "company": "Digital Experts",
+      "period": "2024/11 - 2024/12, 2025/04 - Present",
+      "description": "Developing an iOS application that uses machine learning."
+    },
+    "intern2": {
+      "title": "Software Engineer Summer Intern",
+      "company": "PKSHA Technology Inc.",
+      "period": "2024/07",
+      "description": "Developed backend of a web application PKSHA Speech Insight."
+    },
+    "intern3": {
+      "title": "AI SaaS Business Unit Software Engineer Intern",
+      "company": "燈株式会社",
+      "period": "2022/05 - 2024/11",
+      "description": "Developed frontend and backend of a SaaS product called Digital Billder. Significantly contributed to the development of Digital Billder's ordering system."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "project1": {
+      "title": "ESpecial Write",
+      "description": "A web application that allows college students to manage, write resumes, and get advices from AI.",
+      "tech": "Next.js, TypeScript, OpenAI, shadcn/ui, Tailwind CSS",
+      "liveUrl": "https://www.especialwrite.com/",
+      "githubUrl": ""
+    },
+    "project2": {
+      "title": "Animora",
+      "description": "A social media iOS app that allows users to take pictures of their pets and share them with other users.",
+      "tech": "React Native, Typescript, Go, PostgreSQL, Docker, AWS, AWS CDK, Supabase",
+      "liveUrl": "https://apps.apple.com/jp/app/animora/id6745143381",
+      "githubUrl": "https://github.com/AnimoraVictory/animora"
+    },
+    "project3": {
+      "title": "Sikepuri",
+      "description": "A web application that allows college students to share lecture materials.",
+      "tech": "Next.js, Typescript, React, Chakra UI, Hono, PostgreSQL, Docker, AWS, Terraform",
+      "liveUrl": "",
+      "githubUrl": ""
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "languages": "Programming Languages",
+    "frameworks": "Frameworks & Libraries",
+    "tools": "Tools & Technologies"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "atcoder": "AtCoder Algorithm: 1087 (2022/04)",
+    "atcoderUrl": "https://atcoder.jp/users/tanomitsu",
+    "ap": "Applied Information Technology Engineer Examination",
+    "toefl": "TOEFL iBT: 96"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "I'm always open to discussing new opportunities and interesting projects.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  }
+}
