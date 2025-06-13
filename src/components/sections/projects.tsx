@@ -90,7 +90,12 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         className="flex-1"
                       >
-                        <Button size="sm" variant="outline" className="w-full">
+                        <Button
+                          aria-label="Code"
+                          size="sm"
+                          variant="outline"
+                          className="w-full"
+                        >
                           <Github className="h-4 w-4 mr-2" />
                           Code
                         </Button>
@@ -103,7 +108,7 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         className="flex-1"
                       >
-                        <Button size="sm" className="w-full">
+                        <Button aria-label="Live" size="sm" className="w-full">
                           <ExternalLink className="h-4 w-4 mr-2" />
                           Live
                         </Button>

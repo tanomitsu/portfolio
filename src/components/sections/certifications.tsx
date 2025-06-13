@@ -73,7 +73,12 @@ export default function Certifications() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Button size="sm" variant="outline" className="w-full">
+                        <Button
+                          aria-label="View Profile"
+                          size="sm"
+                          variant="outline"
+                          className="w-full"
+                        >
                           <ExternalLink className="h-4 w-4 mr-2" />
                           View Profile
                         </Button>
