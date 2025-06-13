@@ -1,9 +1,10 @@
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
+import { routing } from "@/i18n/routing";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,24 +16,30 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const locales = ['en', 'ja'] as const;
-type Locale = typeof locales[number];
-
 export function generateStaticParams() {
-  return locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({
-  params
+  params,
 }: {
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const {locale} = await params;
-  
+  const { locale } = await params;
+
   return {
     title: "Portfolio - Mitsuru Hatano",
     description: "Mitsuru Hatano's Portfolio",
-    keywords: ["software engineer", "portfolio", "web development", "react", "next.js", "typescript", "javascript", "fullstack developer"],
+    keywords: [
+      "software engineer",
+      "portfolio",
+      "web development",
+      "react",
+      "next.js",
+      "typescript",
+      "javascript",
+      "fullstack developer",
+    ],
     authors: [{ name: "Software Engineer" }, { name: "Mitsuru Hatano" }],
     robots: {
       index: true,
@@ -40,9 +47,9 @@ export async function generateMetadata({
       googleBot: {
         index: true,
         follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
       },
     },
     openGraph: {
@@ -50,10 +57,10 @@ export async function generateMetadata({
       description: "Mitsuru Hatano's Portfolio",
       type: "website",
       locale: locale,
-      alternateLocale: locale === 'en' ? 'ja' : 'en',
+      alternateLocale: locale === "en" ? "ja" : "en",
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title: "Portfolio - Mitsuru Hatano",
       description: "Mitsuru Hatano's Portfolio",
     },
@@ -62,22 +69,23 @@ export async function generateMetadata({
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }) {
-  const {locale} = await params;
-  
-  if (!locales.includes(locale as Locale)) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
-  const messages = await getMessages({locale});
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <NextIntlClientProvider messages={messages} locale={locale}>
           {children}
         </NextIntlClientProvider>
